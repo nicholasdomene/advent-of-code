@@ -18,7 +18,8 @@ def find_trees(right, down):
 	size_row = len(f[0])-1
 
 	for i in range(0, len(f), down):
-		location = f[i][i*right%size_row]
+		row_location = (i//down)*right%size_row
+		location = f[i][row_location]
 		if location == "#":
 			trees += 1
 	return trees
