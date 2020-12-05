@@ -1,12 +1,5 @@
 f = list(open("day_5_input.txt", "r"))
 
-
-
-
-
-
-
-
 def decode(passport):
 
 	front = 0
