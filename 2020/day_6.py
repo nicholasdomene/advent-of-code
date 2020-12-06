@@ -10,6 +10,7 @@ def count_answer_any(group):
 	return len(c.Counter(group))
 
 def count_answer_all(group, group_size):
+	#list, list -> int
 	s = 0
 	counter = c.Counter(group)
 	for letter in counter:
